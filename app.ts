@@ -52,23 +52,23 @@ for (let i = 0; i < people.length; i++) {
     checkAge(people[i].name, people[i].age);
 }
 
-let strlength: number = getLength("Hello World");
+let strlength = getLength("Hello World");
 if (strlength % 2 == 0) {
     console.log("The world is nice and even!");
 } else {
     console.log("The world is an odd place!");
 }
 
-function sayHello() {
+function sayHello(): void {
     alert("Hello World!");
 }
 
-function checkAge(name: string, age: number) {
+function checkAge(name: string, age: number): void {
     if (age < 21) {
         alert("Sorry " + name + ", you aren't old enough to view this page!");
     }
 }
 
-function getLength(word: string) {
+function getLength(word: string): number {
     return word.length;
 }
